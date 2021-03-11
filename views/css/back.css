@@ -1,0 +1,119 @@
+/**
+* 2007-2020 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2020 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+/* Style the navigation menu */
+.wi_panel {
+    margin-bottom: 10px!important;
+}
+.wi_panel h2 {
+    font-family: Arvo !important;
+    letter-spacing: 0;
+    color: #373942;
+    font-weight: 700;
+    line-height: 0.4;
+    min-height: auto !important;
+    font-size: 2.0em;
+}
+.wi-slogan {
+    font-size: 1.5em;
+    line-height: 2.0;
+}
+.wi_logo {
+    max-height: 36px;
+}
+.wi_module_menu {
+    width: 100%;
+    background-color: #363a41;
+    overflow: auto;
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* Navigation links */
+.wi_module_menu li {
+    float: left;
+    padding: 0px;
+}
+.wi_module_menu li a {
+    display: block;
+    text-decoration: none!important;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: #fff;
+}
+.wi_module_menu li a:hover, .wi_module_menu li a:focus {
+    background-color: #202226;    
+    color: #fff;
+}
+.wi_module_menu li a.active {
+    background-color: #F32746;
+}
+@media only screen and (max-width: 600px) {
+    .wi_module_menu li {
+        float: none;
+    }
+}
+.wi-percent {
+    position: relative;
+    border: 1xp solid #363a41;
+    border-radius: 3px;
+    background-color: #cacaca;
+    width: 400px;
+    height: 25px;
+    margin-top: 7px;
+}
+.wi-percent-complete {
+    position: relative;
+    border-radius: 3px;
+    height: 100%;
+    width: 0px;
+    background-color: #72c279;
+}
+.lds-dual-ring {
+    display: none;    
+    width: 15px;
+    height: 15px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 6px solid #da7b82;
+    border-color: #da7b82 transparent #da7b82 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
